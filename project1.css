@@ -21,7 +21,7 @@ html, body{
     gap: 50px;
     justify-content: flex-start;
     position:fixed;
-    z-index: 110;
+    z-index: 2; 
 }
 
 #nav img {
@@ -29,26 +29,27 @@ html, body{
     width: 150px;
     padding: 2px;
     align-self: flex-start;
-    z-index: 99;
 }
 
 #nav h4{
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .background video{
     height: 100%;
     width: 100%;
     position: fixed;
-    z-index: 98;
+    z-index: -1;
     object-fit: cover;
 }
 
 #main{
+    /* height: 100%;
+    width:100%; */
     position: relative;
-    background-color: rgba(0, 0, 0, 0.467);
-    z-index: 101;
+    background-color: rgba(0, 0, 0, 0.763);
+    z-index: 1;
 }
 
 #page1{
@@ -59,4 +60,80 @@ html, body{
     align-items: center;
     justify-content: center;
     position: relative;
+}
+
+#page1 h1{
+    font-size: 100px;
+    position:relative;
+}
+
+#page1 h1::before{ /*this lets css write pseudo words*/
+    content:"SLEEP . STREAM . REPEAT "; /*content is the must have element in the before structure*/
+    position:absolute;
+    color: #c6f020;
+    top: -4px;
+    left: -4px;
+    -webkit-text-stroke: 1px #c6f020;  /*this feature allows you to have a kinda border of each letter in the element*/
+    /* we have to pass on two parameters: 1)width 2)color */
+    /* z-index:1 ; */
+}
+
+#page1 h2{
+    font-size: 30px;
+}
+
+#page2 {
+    height: 100vh;
+    width:100%;
+}
+
+#cursor{
+    height:20px;
+    width:20px;
+    position:fixed;
+    background-color: #c6f020;
+    border-radius: 50%;     
+    z-index: 10;
+    filter:blur(30px)
+}
+
+#cursor-blur{
+    height:400px;
+    width:400px;
+    position:fixed;
+    background-color: #ccff005a;
+    border-radius: 50%;  
+    filter:blur(50px)   
+}
+
+#scroller{
+    /* background-color: #c6f020; */
+    white-space: nowrap;   
+    overflow-x: scroll;
+    overflow-y:hidden; 
+    animation-name:scroll;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count:infinite;
+}
+
+#scroller::-webkit-scrollbar{
+    display:none;
+}
+
+#scroller h3{
+    display:inline-block;
+    font-size: 30px;
+    color:transparent;
+    -webkit-text-stroke: 0.5px white;
+    text-transform: uppercase;
+}
+
+@keyframes scroll{
+    from {
+        transform:translateY(0);
+    }
+    to{
+        transform:translateX(100%);
+    }
 }
