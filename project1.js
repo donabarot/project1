@@ -15,23 +15,24 @@ gsap.to("#nav",{
     height:"70px",
     scrollTrigger:{
         trigger:"#nav",
-        scroller:"body",
+        scroller:"main",
         markers:true,
-        start:"top -10%",
+        start:"top 10%",
         end:"top -11%",
         scrub:2,
     }
 })
 
-gsap.to("#main",{
-    backgroundColor:"#c6f020",
-    // duration:1,
-    scrollTrigger:{
-        trigger:"#main",
-        scroller:"body",
+
+
+gsap.to(".blur", {
+    backdropFilter: "blur(50px)",
+    scrollTrigger: {
+        trigger: "#main",
+        scroller: "body",
         markers: true,
-        start:"top -75%",
+        start: "top -75%",
         end: "top -100%",
-        scrub:5,
+        scrub: 1.5,
     }
-})
+});

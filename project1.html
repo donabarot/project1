@@ -18,26 +18,50 @@
     <div id="cursor"></div>
     <div id="cursor-blur"></div>
     <div class="background">
-    <video autoplay muted loop src="background video.mp4"></video>
-</div>
+        <video autoplay muted loop src="background video.mp4"></video>
+    </div>
 
-<div id="main">
+<div id="main" class="blur">
 
     <div id="page1">
         <h1>SLEEP . STREAM . REPEAT</h1>
         <h2>All your interests are ON-AIR Live</h2>
     </div>
 
+
     <div id="page2">
+
+        <div id="about">
+            <h2>ABOUT US</h2>
+            <p>Welcome to ON-AIR, the ultimate destination for live streaming and on-demand content. 
+                Whether you’re here to catch the latest trends, dive into immersive gaming, or explore educational streams,
+                we’ve got you covered. Our platform blends the best, offering diverse content and interactive experiences for all interests. 
+                Join our vibrant community and discover a world of entertainment and knowledge!</p>
+        </div>
+
         <div id="scroller">
             <div id="scroller1"><h3>Channels we think you'll like</h3></div>
-            <div id="scroller2"><h3>Live channels</h3></div>
+
+            <div id="containers">
+                <div id="card1" class="card"></div>
+                <div id="card2" class="card"></div>
+                <div id="card3" class="card"></div>
             
-            
+            </div>  
+    </div>
+
+    <div id="page3">
+        <div id="scroller2"> <h3>current live On-air </h3> </div>
+
+            <div id="containers2">
+            <div id="card4" class="card"></div>
+            <div id="card5" class="card"></div>
+            <div id="card6" class="card"></div>
         </div>
     </div>
 
-</div>    
+</div>
+   
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
