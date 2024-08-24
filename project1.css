@@ -84,7 +84,7 @@ html, body{
 }
 
 #page2 {
-    height: 100vh;
+    height: 300px;
     width:100%;
 }
 
@@ -108,47 +108,9 @@ html, body{
 }
 
 
-#scroller::-webkit-scrollbar{
-    display:none;
-}
 
-#scroller1 {
-    display: flex;
-    justify-content: left; /* Centers h3 horizontally */
-    width: 100%; 
-    overflow: hidden;
-    overflow-x: hidden;
-    animation-name:scroll;
-    animation-duration: 7s;
-    animation-timing-function: linear;
-    animation-iteration-count:infinite;
-    position: relative;
-    z-index: 10;
-}
 
-#scroller1 h3{
-    margin-left: 190px;
-    text-align: center;
-    /* display:inline-block; */
-    font-size: 50px;
-    color:transparent;
-    transition: all linear 0.5s;
-    -webkit-text-stroke: 0.5px rgb(255, 255, 255);
-    text-transform: uppercase;
-}
 
-#scroller h3:hover{
-    color: #c6f020;
-}
-
-@keyframes scroll {
-    50% {
-        transform: translateX(-100%);
-    }
-    50% {
-        transform: translateX(16%);
-    }
-}
 .blur {
     backdrop-filter: blur(0px);
     transition: backdrop-filter 1s ease;
@@ -156,8 +118,9 @@ html, body{
 
 
 #about{
-    height: 50vh;
+    height: 25vh;
     width:100%;
+    /* background-color: blueviolet; */
 }
 #about h2 {
     text-align: center;
@@ -177,7 +140,58 @@ html, body{
     padding-top: 10px;
 }
 
-#containers{
+#page3{
+    height: 100%;
+    width:100%;
+}
+
+@keyframes scroll {
+    50% {
+        transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(7%);
+    }
+}
+
+.scroller{
+    width: 100%; 
+    overflow: hidden;
+    overflow-x: hidden;
+    animation-name:scroll;
+    animation-duration: 7s;
+    animation-timing-function: linear;
+    animation-iteration-count:infinite;
+    position: relative;
+    z-index: 10;
+}
+
+#scroller::-webkit-scrollbar{
+    display:none;
+}
+
+#scroller1 {
+    display: flex;
+    justify-content: left; /* Centers h3 horizontally */
+    width: 100%; 
+}
+
+#scroller1 h3{
+    /* margin-left: 190px; */
+    text-align: center;
+    display:inline-block;
+    font-size: 50px;
+    color:transparent;
+    transition: all linear 0.5s;
+    -webkit-text-stroke: 0.5px rgb(255, 255, 255);
+    text-transform: uppercase;
+}
+
+#scroller1 h3:hover{
+    color: #c6f020;
+}
+
+#container1{
     animation-name:scroll;
     animation-duration: 7s;
     display:flex;
@@ -191,6 +205,7 @@ html, body{
     animation-iteration-count:infinite;
     position: relative;
     z-index: 10;
+    margin-bottom: 30px;
 }
 
 
@@ -204,12 +219,29 @@ html, body{
 
 }
 
-/* #page3{
-    height: 100%;
-    width:100%;
-} */
 
-#containers2{
+#scroller2 {
+    display: flex;
+    justify-content: left; /* Centers h3 horizontally */
+    width: 100%; 
+}
+
+#scroller2 h3{
+    /* margin-left: 190px; */
+    text-align: center;
+    display:inline-block;
+    font-size: 50px;
+    color:transparent;
+    transition: all linear 0.5s;
+    -webkit-text-stroke: 0.5px rgb(255, 255, 255);
+    text-transform: uppercase;
+}
+
+#scroller2 h3:hover{
+    color: #c6f020;
+}
+
+#container2{
     animation-name:scroll;
     animation-duration: 7s;
     display:flex;
@@ -223,35 +255,4 @@ html, body{
     animation-iteration-count:infinite;
     position: relative;
     z-index: 10;
-}
-
-#scroller2 {
-    display: flex;
-    justify-content: left; /* Centers h3 horizontally */
-    width: 100%; 
-    overflow: hidden;
-    overflow-x: hidden;
-    animation-name:scroll;
-    animation-duration: 7s;
-    animation-timing-function: linear;
-    animation-iteration-count:infinite;
-    position: relative;
-    z-index: 10;
-}
-
-#scroller2 h3{
-
-    margin-left: 290px;
-    margin-top: 50px;
-    text-align: center;
-    /* display:inline-block; */
-    font-size: 50px;
-    color:transparent;
-    transition: all linear 0.5s;
-    -webkit-text-stroke: 0.5px rgb(255, 255, 255);
-    text-transform: uppercase;
-}
-
-#scroller2 h3:hover{
-    color:#c6f020;
 }
