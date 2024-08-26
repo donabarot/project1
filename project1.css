@@ -154,17 +154,6 @@ html, body{
     }
 }
 
-.scroller{
-    width: 100%; 
-    overflow: hidden;
-    overflow-x: hidden;
-    animation-name:scroll;
-    animation-duration: 7s;
-    animation-timing-function: linear;
-    animation-iteration-count:infinite;
-    position: relative;
-    z-index: 10;
-}
 
 #scroller::-webkit-scrollbar{
     display:none;
@@ -174,6 +163,9 @@ html, body{
     display: flex;
     justify-content: left; /* Centers h3 horizontally */
     width: 100%; 
+    animation-name: scroll;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
 }
 
 #scroller1 h3{
@@ -192,17 +184,11 @@ html, body{
 }
 
 #container1{
-    animation-name:scroll;
-    animation-duration: 7s;
     display:flex;
     margin-top: 15px;
     white-space: wrap;
     overflow: hidden;
     overflow-x: hidden;
-    animation-name:scroll;
-    animation-duration: 7s;
-    animation-timing-function: linear;
-    animation-iteration-count:infinite;
     position: relative;
     z-index: 10;
     margin-bottom: 30px;
@@ -216,7 +202,10 @@ html, body{
     background-color: #fff;
     margin-left:20px;
     overflow: hidden;
-
+    animation-name:scroll;
+    animation-duration: 7s;
+    animation-timing-function: linear;
+    animation-iteration-count:infinite;
 }
 
 
